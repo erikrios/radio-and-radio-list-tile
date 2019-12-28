@@ -37,7 +37,8 @@ class _RadioListTileHomePageState extends State<RadioListTileHomePage> {
               ),
               RadioListTile(
                 value: 1,
-                groupValue: (int value) {
+                groupValue: this.selected,
+                onChanged: (int value) {
                   onChanged(value);
                 },
                 title: Text('Wanita'),
